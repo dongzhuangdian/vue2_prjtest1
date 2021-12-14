@@ -2,7 +2,8 @@
   <div id="app">
     <!-- <HelloWorld msg="项目测试"/> -->
 	<Header></Header>
-	<Content></Content>
+	
+	<router-view></router-view>
 	<Footer></Footer>
   </div>
 </template>
@@ -10,15 +11,15 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
-import Content from './components/Content.vue'
-import Footer from './components/Footer.vue'
+import Footer from "./components/Footer.vue"
+
+
 
 export default {
   name: 'app',
   components: {
     // HelloWorld,
 	Header,
-	Content,
 	Footer
   }
 }
