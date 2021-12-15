@@ -1,66 +1,6 @@
 <template>
 	<div id="content">
 		<div id="picture">
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-			picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
-	picture<br>
 		
 
 		</div>
@@ -68,11 +8,13 @@
 </template>
 
 <script>
+	import { Tabbar, TabbarItem } from 'vux'
 	export default {
 	  name: 'Content',
 	  props: {
 	    msg: String
-	  }
+	  },
+	  
 	}
 </script>
 
@@ -81,11 +23,8 @@
 		color: #62C8F3;
 		border: solid;
 		border-width: 1px;
-		/* flex:1,0,auto; */
 		flex-grow: 1;
-		/* flex-basis: auto; */
 		flex-shrink: 1;
-		/* width: 100%; */
 		overflow-y: auto;
 	}
 </style>

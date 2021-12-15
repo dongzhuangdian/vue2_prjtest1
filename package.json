@@ -9,11 +9,16 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-router": "^3.5.3"
+    "vue-router": "^3.5.3",
+    "vux": "^2.11.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
-    "vue-template-compiler": "^2.6.10"
+    "less": "^2.7.3",
+    "less-loader": "^7.3.0",
+    "vue-template-compiler": "^2.6.10",
+    "vux-loader": "^1.2.9",
+    "yaml-loader": "^0.6.0"
   }
 }
