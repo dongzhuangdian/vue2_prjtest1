@@ -8,13 +8,11 @@
 </template>
 
 <script>
-	import { Tabbar, TabbarItem } from 'vux'
 	export default {
 	  name: 'Content',
 	  props: {
 	    msg: String
-	  },
-	  
+	  }
 	}
 </script>
 

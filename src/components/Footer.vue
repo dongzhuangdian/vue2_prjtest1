@@ -1,23 +1,9 @@
 <template>
 	<div id="footer">
-		 <tabbar>
-		      <tabbar-item>
-		        <img slot="icon" src="../assets/nav_explore.png">
-		        <span slot="label">Wechat</span>
-		      </tabbar-item>
-		      <tabbar-item show-dot>
-		        <img slot="icon" src="../assets/nav_message.png">
-		        <span slot="label">Message</span>
-		      </tabbar-item>
-		      <tabbar-item selected link="/content">
-		        <img slot="icon" src="../assets/nav_news.png">
-		        <span slot="label">Explore</span>
-		      </tabbar-item>
-		      <tabbar-item badge="2">
-		        <img slot="icon" src="../assets/nav_wechat.png">
-		        <span slot="label">News</span>
-		      </tabbar-item>
-		    </tabbar>
+		<div>
+			<button type="button">SMS</button>
+			<button type="button">MOB</button>
+		</div>
 	</div>
 </template>
 
