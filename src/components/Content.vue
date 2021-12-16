@@ -1,17 +1,22 @@
 <template>
 	<div id="content">
 		<div id="picture">
-		
-
+			
+			<van-icon name="cart-circle-o" size="40" color="red"/>
+			
 		</div>
 	</div>
 </template>
 
 <script>
+	import {Icon} from "vant"
 	export default {
 	  name: 'Content',
 	  props: {
 	    msg: String
+	  },
+	  components:{
+		  [Icon.name]:Icon
 	  }
 	}
 </script>
