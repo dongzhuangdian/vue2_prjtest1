@@ -1,26 +1,20 @@
 <template>
   <div id="home">
-    <!-- <HelloWorld msg="项目测试"/> -->
-	<!-- <Header></Header> -->
-	<!-- <router-view></router-view> -->
+	<Header></Header>
 	<Content></Content>
-	<!-- <Footer></Footer> -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-// import Header from './Header.vue'
+import Header from './Header.vue'
 import Content from './Content.vue'
-// import Footer from './Footer.vue'
+
 
 export default {
   name: 'Home',
   components: {
-    // HelloWorld,
-	// Header,
+	Header,
 	Content,
-	// Footer
   }
 }
 </script>
