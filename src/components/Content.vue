@@ -1,22 +1,34 @@
 <template>
 	<div id="content">
-		<div id="picture">
-			
-			<van-icon name="cart-circle-o" size="40" color="red"/>
-			
-		</div>
+	    <van-swipe :autoplay="3000">
+	      <van-swipe-item v-for="(image, index) in images" :key="index">
+	        <img v-lazy="image" />
+	      </van-swipe-item>
+	    </van-swipe>
 	</div>
 </template>
 
 <script>
-	import {Icon} from "vant"
+	import Vue from 'vue';
+	import { Swipe, SwipeItem } from 'vant';
+	// import { Lazyload } from 'vant';
 	export default {
 	  name: 'Content',
+	  data(){
+		 return{
+			 images:[
+			 	"http://n.sinaimg.cn/tech/5_img/upload/e5308a4d/106/w1024h682/20210309/86d4-kmeeiur9324102.jpg",
+				"http://n.sinaimg.cn/tech/5_img/upload/e5308a4d/106/w1024h682/20210309/ad6f-kmeeiur9324126.jpg"
+			  ]
+		 } 
+	  },
 	  props: {
 	    msg: String
 	  },
 	  components:{
-		  [Icon.name]:Icon
+		  [Swipe.name]:Swipe,
+		  [SwipeItem.name]:SwipeItem,
+		  // [Lazyload.name]:Lazyload,
 	  }
 	}
 </script>
