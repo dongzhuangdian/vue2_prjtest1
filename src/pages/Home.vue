@@ -1,20 +1,19 @@
 <template>
   <div id="home">
-	<Header></Header>
-	<Content></Content>
+	<Swipe></Swipe>
   </div>
 </template>
 
 <script>
-import Header from './Header.vue'
-import Content from './Content.vue'
+// import Header from './Header.vue'
+import Swipe from './Swipe.vue'
 
 
 export default {
   name: 'Home',
   components: {
-	Header,
-	Content,
+	// Header,
+	Swipe,
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-	<div id="content">
+	<div id="Swipe">
 	    <van-swipe :autoplay="3000">
 	      <van-swipe-item v-for="(image, index) in images" :key="index">
 	        <img v-lazy="image" />
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-	import Vue from 'vue';
+	// import Vue from 'vue';
 	import { Swipe, SwipeItem } from 'vant';
 	// import { Lazyload } from 'vant';
 	export default {
-	  name: 'Content',
+	  name: 'Swipe',
 	  data(){
 		 return{
 			 images:[
@@ -34,12 +34,12 @@
 </script>
 
 <style>
-	#content{
-		color: #62C8F3;
-		border: solid;
-		border-width: 1px;
+	#Swipe{
 		flex-grow: 1;
 		flex-shrink: 1;
 		overflow-y: auto;
+	}
+	img{
+		max-width: 100%;
 	}
 </style>
