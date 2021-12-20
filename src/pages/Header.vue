@@ -17,8 +17,8 @@ export default {
 
 <style>
 	 #header{
-		 border: solid green;
-		 border-width: 1px;
+		 /* border: solid green; */
+		 /* border-width: 1px; */
 		 flex-grow: 0;
 		 /* flex-basis: auto; */
 		 flex-shrink: 0;

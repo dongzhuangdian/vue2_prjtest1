@@ -15,6 +15,10 @@ const routes = [
 		component: myself,
 	},
 	{
+		path:"/home",
+		component: home
+	},
+	{
 		path:"/myself",
 		component: myself
 	}
