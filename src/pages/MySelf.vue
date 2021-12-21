@@ -1,21 +1,23 @@
 <template>
 	<div id="myself">
-		<van-image round  width="5rem" height="5rem" src="https://img01.yzcdn.cn/vant/cat.jpeg"/>
+		<div class="header_photo">
+			<van-image round width="5rem" height="5rem" src="https://img01.yzcdn.cn/vant/cat.jpeg"/>
+			<p>小陈</p>
+		</div>
 		
-		<van-cell value="全部" is-link>
-		  <!-- 使用 title 插槽来自定义标题 -->
+		
+		<van-cell class="all_orders" value="全部" is-link>
 		  <template #title>
-		    <span class="custom-title">我的订单</span>
-		    <!-- <van-tag type="danger">标签</van-tag> -->
+		    <span>我的订单</span>
 		  </template>
 		</van-cell>
 		
 		<van-grid clickable :column-num="5">
-		  <van-grid-item icon="credit-pay" text="待付款" to="/" />
-		  <van-grid-item icon="shop-collect-o" text="待发货" url="/vant/mobile.html" />
+		  <van-grid-item icon="credit-pay" text="待付款" badge=2 to="/" />
+		  <van-grid-item icon="shop-collect-o" text="待发货" :dot=true url="/vant/mobile.html" />
 		  <van-grid-item icon="logistics" text="待收货" url="/vant/mobile.html" />
 		  <van-grid-item icon="chat-o" text="待评价" url="/vant/mobile.html" />
-		  <van-grid-item icon="refund-o" text="退款/售后" url="/vant/mobile.html" />
+		  <van-grid-item icon="refund-o" text="售后" url="/vant/mobile.html" />
 		</van-grid>
 
 		
@@ -30,7 +32,7 @@
 		
 		<br>
 		<!-- <van-cell title="URL 跳转" is-link url="/vant/mobile.html" /> -->
-		<div class="cell">
+		<div class="info_button">
 			<van-cell-group>
 				<van-cell title="个人信息" is-link to="index" />
 				<van-cell title="收货地址" is-link to="index" />
@@ -67,18 +69,20 @@
 </script>
 
 <style lang="less">
-  .cell{
-	  text-align:left
+	.txt_left {
+		text-align:left
+	}
+	
+	.info_button{
+		.txt_left()
+	}
+  .all_orders {
+	 .txt_left()
   }
-  .custom-title {
-    // margin-right: 4px;
-    // vertical-align: left;
-	 text-align:left
-  }
-
-  .search-icon {
-    font-size: 16px;
-    // line-height: inherit;
+  
+  .header_photo{
+	  padding-top: 15px;
+	  font-size: 15px;
   }
 
 </style>

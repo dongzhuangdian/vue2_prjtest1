@@ -21,7 +21,7 @@
 	  name: 'Footer',
 	  data(){
 		  return {
-			  active:3
+			  active:0
 		  }
 	  },
 	  watch: {

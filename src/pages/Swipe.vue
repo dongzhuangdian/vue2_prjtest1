@@ -17,8 +17,8 @@
 	  data(){
 		 return{
 			 images:[
-			 	"http://n.sinaimg.cn/tech/5_img/upload/e5308a4d/106/w1024h682/20210309/86d4-kmeeiur9324102.jpg",
-				"http://n.sinaimg.cn/tech/5_img/upload/e5308a4d/106/w1024h682/20210309/ad6f-kmeeiur9324126.jpg"
+			 	require("@/assets/food.png"),
+				require("@/assets/fruit.png"),
 			  ]
 		 } 
 	  },
@@ -34,11 +34,11 @@
 </script>
 
 <style>
-	#Swipe{
+/* 	#Swipe{
 		flex-grow: 1;
 		flex-shrink: 1;
 		overflow-y: auto;
-	}
+	} */
 	img{
 		max-width: 100%;
 	}
