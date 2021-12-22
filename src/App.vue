@@ -2,6 +2,7 @@
   <div id="app">
 	<!-- <router-link to="/"></router-link> -->
 	<router-view></router-view>
+	
 	<Footer></Footer>
   </div>
 </template>
@@ -24,9 +25,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  /* margin-top: 5px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* height: 100%; */
 }
 </style>
