@@ -2,13 +2,26 @@
 	<div>
 		<Search></Search>
 		
-		<div id="classify">
-			<van-sidebar v-model="activeKey" @change="onChange">
-			  <van-sidebar-item title="标签名1" />
-			  <van-sidebar-item title="标签名2" />
-			  <van-sidebar-item title="标签名3" />
-			</van-sidebar>
+		<div class="classify">
+			<div class="classify_sidebar">
+				<van-sidebar v-model="activeKey" @change="onChange">
+				  <van-sidebar-item title="热销品1"/>
+				  <van-sidebar-item title="标签名2" />
+				  <van-sidebar-item title="标签名3" />
+				  <van-sidebar-item title="标签名4" />
+				  <van-sidebar-item title="标签名5" />
+				  <van-sidebar-item title="标签名6" />
+				  <van-sidebar-item title="标签名7" />
+				  <van-sidebar-item title="标签名8" />
+				  <van-sidebar-item title="标签名9" />
+				</van-sidebar>
+			</div>
+			<div class="classify_result">
+				<router-view></router-view>
+			</div>
+			
 		</div>
+		
 	</div>
 
 </template>
@@ -26,7 +39,7 @@
 		  },
 		  methods: {
 		    onChange(index) {
-		      Notify({ type: 'primary', message: index });
+		      this.$router.push({name:'classifyresult',query: {id:this.activeKey}})
 		    },
 		  },
 		components:{
@@ -39,4 +52,9 @@
 </script>
 
 <style>
+	.classify{
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+	}
 </style>

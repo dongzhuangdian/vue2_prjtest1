@@ -1,6 +1,6 @@
 <template>
 	<div class="home_search">
-		<van-search class="search" v-model="value" background="#FA8072" show-action  placeholder="请输入搜索物品"  @search="onSearch">
+		<van-search class="search" v-model="value" show-action  placeholder="请输入搜索物品"  @search="onSearch">
 		  <template #action>
 		    <div @click="onSearch">搜索</div>
 		  </template>
@@ -39,5 +39,6 @@
 		z-index: 99;
 		width: 100%;
 		padding-top: 10px;
+		background-color: #fa3d0d;
 	}
 </style>
