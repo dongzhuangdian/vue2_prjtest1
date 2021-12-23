@@ -3,18 +3,15 @@
 	<!-- <router-link to="/"></router-link> -->
 	<router-view></router-view>
 	
-	<Footer></Footer>
+	
   </div>
 </template>
 
 <script>
-import Footer from "./components/Footer.vue"
+
 
 export default {
   name: 'app',
-  components: {
-	Footer
-  }
 }
 </script>
 
@@ -27,7 +24,7 @@ export default {
   color: #2c3e50;
   /* margin-top: 5px; */
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* height: 100%; */
 }
 </style>

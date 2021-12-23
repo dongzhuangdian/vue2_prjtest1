@@ -12,7 +12,7 @@ const routes = [
 	{
 		path: '/',
 		// name: 'home',
-		component: () => import('../pages/Classify.vue'),
+		component: () => import('../pages/Home.vue'),
 	},
 	{
 		path:"/home",
@@ -35,6 +35,10 @@ const routes = [
 		   },
 		]
 	},
+	{
+		path:"/cart",
+		component: () => import('../pages/Cart.vue'),
+	}
 ]
 
 export default new Router({

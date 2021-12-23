@@ -2,8 +2,8 @@
 		<div id="footer">
 			<van-tabbar v-model="active" safe-area-inset-bottom>
 				<van-tabbar-item to="/home" icon="home-o">首页</van-tabbar-item>
-				<van-tabbar-item to="/classify" icon="qr">分类</van-tabbar-item>
-				<van-tabbar-item icon="cart-circle-o">购物车</van-tabbar-item>
+				<van-tabbar-item to="/classify/result?id=0" icon="qr">分类</van-tabbar-item>
+				<van-tabbar-item to="/cart" icon="cart-circle-o">购物车</van-tabbar-item>
 				<van-tabbar-item to="/myself" icon="contact">我的</van-tabbar-item>
 				
 				 <!-- <van-tabbar-item replace to="/search" icon="search">标签</van-tabbar-item> -->
@@ -22,7 +22,7 @@
 	  name: 'Footer',
 	  data(){
 		  return {
-			  active:1
+			  active:0
 		  }
 	  },
 	  watch: {

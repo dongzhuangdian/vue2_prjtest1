@@ -19,16 +19,6 @@
 		  <van-grid-item icon="chat-o" text="待评价" url="/vant/mobile.html" />
 		  <van-grid-item icon="refund-o" text="售后" url="/vant/mobile.html" />
 		</van-grid>
-
-		
-	<!-- 	<van-cell title="单元格" icon="shop-o">
-		 
-		  <template #right-icon>
-		    <van-icon name="search" class="search-icon" />
-		  </template>
-		</van-cell> -->
-		
-
 		
 		<br>
 		<!-- <van-cell title="URL 跳转" is-link url="/vant/mobile.html" /> -->
@@ -40,6 +30,8 @@
 			</van-cell-group>
 		</div>
 		
+		<Footer></Footer>
+		
 	</div>
 </template>
 
@@ -48,6 +40,8 @@
 	import { Cell, CellGroup } from 'vant';
 	import { Icon } from 'vant';
     import { Grid, GridItem } from 'vant';
+	import Footer from "./Footer.vue"
+	
 	export default {
 		name: "MySelf",
 		data(){
@@ -56,6 +50,7 @@
 			}
 		},
 		components:{
+			Footer,
 			[VanImage.name] : VanImage,
 			[Cell.name] : Cell,
 			[CellGroup.name] : CellGroup,
