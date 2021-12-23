@@ -12,7 +12,7 @@ const routes = [
 	{
 		path: '/',
 		// name: 'home',
-		component: home,
+		component: () => import('../pages/Classify.vue'),
 	},
 	{
 		path:"/home",
@@ -21,7 +21,12 @@ const routes = [
 	{
 		path:"/myself",
 		component: myself
-	}
+	},
+	{
+		path:"/classify",
+		component: () => import('../pages/Classify.vue')
+	},
+	
 ]
 
 export default new Router({

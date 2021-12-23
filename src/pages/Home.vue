@@ -1,15 +1,6 @@
 <template>
   <div id="home">
-	
-	<div>
-		<van-search v-model="value" background="#FA8072" show-action  placeholder="请输入搜索物品"  @search="onSearch">
-		  <template #action>
-		    <div @click="onSearch">搜索</div>
-		  </template>
-		</van-search>
-	</div>
-
-	
+	<Search></Search>
 	
 	<Swipe></Swipe>
 	
@@ -29,7 +20,7 @@
 	<div>
 		<van-divider content-position="left" dashed>热销产品</van-divider>
 		<van-grid :border="false" :column-num="2" >
-		    <van-grid-item v-for="value in 3" :key="value" >
+		    <van-grid-item v-for="value in 8" :key="value" >
 				<div>
 					<van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
 					<p>手机</p>
@@ -46,8 +37,8 @@
 
 <script>
 // import Header from './Header.vue'
+import Search from './Search.vue'
 import Swipe from './Swipe.vue'
-import { Search } from 'vant';
 import { Grid, GridItem } from 'vant';
 import { Image as VanImage } from 'vant';
 import { Divider } from 'vant';
@@ -74,7 +65,7 @@ export default {
   components: {
 	// Header,
 	Swipe,
-	[Search.name]:Search,
+	Search,
 	[Grid.name]:Grid,
 	[GridItem.name]:GridItem,
 	[VanImage.name]:VanImage,
