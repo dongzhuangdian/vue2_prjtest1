@@ -1,8 +1,13 @@
 <template>
 	<div>
-		<div>
+		<div class="cart_cards" v-for="x in 8">
 			
-			<van-card v-for="x in 8" num="2" price="2.00" desc="描述信息" 
+			<div class="cart_check">
+				<van-checkbox v-model="checked" checked-color="#ee0a24"/>
+			</div>
+			
+			
+			<van-card  class="cart_card" num="2" price="2.00" desc="描述信息" 
 			  title="商品标题" tag="标签"
 			  thumb="https://img01.yzcdn.cn/vant/ipad.jpeg">
 			  <template #tags>
@@ -64,5 +69,18 @@
 <style>
 	.van-submit-bar{
 		bottom: 50px;
+	}
+	.cart_cards{
+		display: flex;
+		flex-direction:  row;
+		/* justify-content: space-around; */
+	}
+	.cart_card{
+		width: 100%;
+	}
+	.cart_check{
+		margin-left: 10px;
+		margin-right: 15px;
+		display: flex;
 	}
 </style>
