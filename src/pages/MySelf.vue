@@ -30,8 +30,6 @@
 			</van-cell-group>
 		</div>
 		
-		<Footer></Footer>
-		
 	</div>
 </template>
 
@@ -40,7 +38,6 @@
 	import { Cell, CellGroup } from 'vant';
 	import { Icon } from 'vant';
     import { Grid, GridItem } from 'vant';
-	import Footer from "./Footer.vue"
 	
 	export default {
 		name: "MySelf",
@@ -50,7 +47,6 @@
 			}
 		},
 		components:{
-			Footer,
 			[VanImage.name] : VanImage,
 			[Cell.name] : Cell,
 			[CellGroup.name] : CellGroup,

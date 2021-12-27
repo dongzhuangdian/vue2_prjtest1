@@ -22,7 +22,6 @@
 			
 		</div>
 		
-		<Footer></Footer>
 		
 	</div>
 
@@ -31,7 +30,6 @@
 <script>
 	import { Sidebar, SidebarItem } from 'vant';
 	import Search from './Search.vue'
-	import Footer from "./Footer.vue"
 	
 	export default {
 		name:"Classify",
@@ -47,7 +45,6 @@
 		  },
 		components:{
 			Search,
-			Footer,
 			[Sidebar.name] :Sidebar,
 			[SidebarItem.name] :SidebarItem
 		}

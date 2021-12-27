@@ -1,4 +1,7 @@
 <template>
+	<div>
+		<router-view></router-view>
+		
 		<div id="footer">
 			<van-tabbar v-model="active" safe-area-inset-bottom>
 				<van-tabbar-item to="/home" icon="home-o">首页</van-tabbar-item>
@@ -10,6 +13,8 @@
 			</van-tabbar>
 			<!-- <van-button type="default">默认按钮</van-button> -->
 		</div>
+	</div>
+
 
 </template>
 

@@ -11,33 +11,32 @@ Vue.use(Router)
 const routes = [
 	{
 		path: '/',
-		// name: 'home',
-		component: () => import('../pages/Home.vue'),
-	},
-	{
-		path:"/home",
-		component: home
-	},
-	{
-		path:"/myself",
-		component: myself
-	},
-	{
-		path:"/classify",
-		component: () => import('../pages/Classify.vue'),
+		component: () => import('../components/Footer.vue'),
 		children: [
 		   {
-		          // 当 /user/:id/profile 匹配成功，
-		          // UserProfile 会被渲染在 User 的 <router-view> 中
-		          path: 'result',
-				  name :"classifyresult",
-		          component: () => import('../pages/ClassifyResult.vue'),
+		        path: 'home',
+		        component: home,
 		   },
+		   {
+			   path:"myself",
+			   component: myself
+		   },
+		   {
+			   path:"cart",
+			   component: () => import('../pages/Cart.vue'),
+		   },
+		   {
+			   path:"classify",
+			   component: () => import('../pages/Classify.vue'),
+			   children: [
+					{
+			            path: 'result',
+						name :"classifyresult",
+			            component: () => import('../pages/ClassifyResult.vue'),
+					},
+			   ]
+		   }
 		]
-	},
-	{
-		path:"/cart",
-		component: () => import('../pages/Cart.vue'),
 	}
 ]
 

@@ -30,8 +30,6 @@
 		</van-grid>
 	</div>
 	
-
-	<Footer></Footer>
   </div>
 </template>
 
@@ -42,7 +40,7 @@ import Swipe from './Swipe.vue'
 import { Grid, GridItem } from 'vant';
 import { Image as VanImage } from 'vant';
 import { Divider } from 'vant';
-import Footer from "./Footer.vue"
+
 
 
 
@@ -67,7 +65,6 @@ export default {
 	// Header,
 	Swipe,
 	Search,
-	Footer,
 	[Grid.name]:Grid,
 	[GridItem.name]:GridItem,
 	[VanImage.name]:VanImage,

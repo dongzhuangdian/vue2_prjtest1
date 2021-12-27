@@ -31,12 +31,10 @@
 			</van-submit-bar>
 		</div>
 		
-		<Footer></Footer>
 	</div>
 </template>
 
 <script>
-	import Footer from "./Footer.vue"
 	import { Card } from 'vant';
 	import { SubmitBar } from 'vant';
 	import { Button } from 'vant';
@@ -55,7 +53,6 @@
 			onClickEditAddress(){}
 		},
 		components:{
-			Footer,
 			[Card.name]:Card,
 			[SubmitBar.name]:SubmitBar,
 			[Button.name]:Button,
