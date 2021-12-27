@@ -20,7 +20,7 @@
 	<div>
 		<van-divider content-position="left" dashed>热销产品</van-divider>
 		<van-grid :border="false" :column-num="2" >
-		    <van-grid-item v-for="value in 8" :key="value" >
+		    <van-grid-item v-for="value in 8" :key="value" to="/card">
 				<div>
 					<van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
 					<p>手机</p>
