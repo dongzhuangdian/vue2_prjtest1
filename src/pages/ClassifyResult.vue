@@ -6,7 +6,7 @@
 		    <van-grid-item v-for="value in 8" :key="value" >
 				<div>
 					<van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-					<p>手机</p>
+					<p style="text-align: center;">手机</p>
 				</div>
 			    
 			</van-grid-item>

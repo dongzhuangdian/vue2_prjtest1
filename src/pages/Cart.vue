@@ -49,7 +49,9 @@
 			}
 		},
 		methods:{
-			onSubmit(){},
+			onSubmit(){
+				this.$router.push({name:"payment"})
+			},
 			onClickEditAddress(){}
 		},
 		components:{

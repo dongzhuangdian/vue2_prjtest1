@@ -74,6 +74,7 @@
   .header_photo{
 	  padding-top: 15px;
 	  font-size: 15px;
+	  text-align: center;
   }
 
 </style>

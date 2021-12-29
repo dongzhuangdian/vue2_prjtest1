@@ -91,7 +91,7 @@
 			            id: '2',
 			            name: '蓝色',
 			            imgUrl: 'https://img01.yzcdn.cn/2.jpg',
-			            previewImgUrl: 'https://img01.yzcdn.cn/2p.jpg',
+			            previewImgUrl: 'https://img01.yzcdn.cn/2.jpg',
 			          }
 			        ],
 			        largeImageMode: false, //  是否展示大图模式
